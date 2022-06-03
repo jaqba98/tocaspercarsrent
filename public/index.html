@@ -11,6 +11,33 @@
     <title>TO CASPER CARS RENT - strona główna</title>
 </head>
 <body>
+    <nav>
+        <a href="/strona-glowna" class="logo">
+            <span class="logoBright">to casper</span>
+            <span class="logoDark">cars rent</span>
+        </a>
+        <div class="links" [hidden]="menuIsHidden" [@openCloseLinks]="openCloseLinks()">
+            <ul>
+                <li><a href="/strona-glowna">Strona główna</a></li>
+                <li><a href="/nasze-samochody">Nasze samochody</a></li>
+                <li><a href="/galeria">Galeria</a></li>
+            </ul>
+        </div>
+        <div class="hamburger">
+            <span class="topBar"></span>
+            <span class="middleBar"></span>
+            <span class="bottomBar"></span>
+        </div>
+    </nav>
+    <header>
+        <video [muted]="'muted'" autoplay loop playsinline>
+            <source src="./assets/videos/header-video.mp4" type="video/mp4">
+        </video>
+        <section>
+            <p>Wypożyczalnia samochodów sportowych w Kielcach.</p>
+            <a routerLink="/nasze-samochody">Nasze samochody</a>
+        </section>
+    </header>
     <section class="aboutUs">
         <section class="aboutUsContent">
             <h2>O nas</h2>
