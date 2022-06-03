@@ -52,7 +52,7 @@ body {
 .aboutUs {
   display: flex;
   justify-content: center;
-  padding: 50px;
+  padding: 50px 25px;
   background-color: var(--dark1);
 }
 
@@ -89,7 +89,7 @@ footer { background-color: var(--dark1); }
   filter: invert(90%);
 }
 
-.footerContent { padding: 50px; }
+.footerContent { padding: 50px 25px; }
 
 .footerMenu, .footerContact { margin-bottom: 50px; }
 
