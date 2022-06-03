@@ -78,6 +78,89 @@ body {
   .aboutUsContent { width: 960px }
 }
 
+/* >>> Cooperation And Sponsors <<< */
+
+/* tablet and desktop */
+@media (min-width: 768px) {
+  .cooperationAndSponsors {
+    display: flex;
+    height: 400px;
+  }
+
+  .cooperationAndSponsors > * { flex: 1; }
+}
+
+/* >>> Cooperation <<< */
+
+/* Mobile, Tablet and Desktop */
+.cooperation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../assets/backgrounds/car-mechanic.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.cooperationShadow {
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.cooperationShadow h2,
+.cooperationShadow h3,
+.cooperationShadow li { font-size: 20px; }
+
+.cooperationShadow h2,
+.cooperationShadow h3 { color: var(--gold1); }
+
+.cooperationShadow h3 { margin-bottom: 10px; }
+
+.cooperationShadow li {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--gold1);
+  text-align: center;
+}
+
+/* >>> Sponsors <<< */
+
+/* Mobile, Tablet and Desktop */
+.sponsors {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  background-color: var(--dark1);
+}
+
+.sponsors h3 { font-size: 20px; }
+
+.sponsors h2,
+.sponsors h3 { color: var(--gold1); }
+
+.sponsors h2 { margin-bottom: 10px; }
+
+.sponsors li {
+  font-weight: bold;
+  color: var(--gold1);
+  text-align: center;
+}
+
 /* >>> Footer <<< */
 
 /* Mobile */
