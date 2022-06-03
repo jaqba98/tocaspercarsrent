@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <title>TO CASPER CARS RENT - strona główna</title>
+   
 </head>
 <body>
     <nav>
@@ -16,7 +17,7 @@
             <span class="logoBright">to casper</span>
             <span class="logoDark">cars rent</span>
         </a>
-        <div class="links" [hidden]="menuIsHidden" [@openCloseLinks]="openCloseLinks()">
+        <div class="links">
             <ul>
                 <li><a href="/strona-glowna">Strona główna</a></li>
                 <li><a href="/nasze-samochody">Nasze samochody</a></li>
@@ -30,7 +31,7 @@
         </div>
     </nav>
     <header>
-        <video [muted]="'muted'" autoplay loop playsinline>
+        <video autoplay muted>
             <source src="./assets/videos/header-video.mp4" type="video/mp4">
         </video>
         <section>
