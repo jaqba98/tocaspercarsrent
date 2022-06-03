@@ -1,0 +1,118 @@
+/* Reset styles to default */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+ul { list-style: none; }
+
+a { text-decoration: none; }
+
+/* Variables */
+:root {
+  /* Different levels of dark color */
+  --dark1: #000000;
+  --dark2: #0e0e0e;
+  /* Different levels of grey color */
+  --grey1: #808080;
+  --grey2: #616161;
+  /* Different levels of white color */
+  --white1: #ffffff;
+  --white2: #eeeeee;
+  /* Different levels of gold color */
+  --gold1: #ffd900;
+  --gold2: #ac9200;
+  --gold3: #695a00;
+  /* Default number values */
+  --navHeight: 80px;
+  --fontSizeHTagMobile: 4vw;
+  --fontSizePTagMobile: 3vw;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: var(--white1);
+  background-color: var(--dark1);
+}
+
+/* Footer */
+/* Mobile */
+footer { background-color: var(--dark1); }
+
+.footerMap > iframe {
+  width: 100%;
+  height: 50vh;
+  filter: invert(90%);
+}
+
+.footerContent { padding: 25px; }
+
+.footerContent h2 {
+  font-size: var(--fontSizeHTagMobile);
+  color: var(--gold2);
+  margin-bottom: 10px;
+}
+
+.menu, .contact, .followUs { margin-bottom: 20px; }
+
+.footerContent li {
+  font-size: var(--fontSizePTagMobile);
+  color: var(--gold3);
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.footerContent a {
+  color: var(--gold3); 
+  transition: color .5s ease-in-out;
+}
+
+.footerContent a:hover { color: var(--gold2); }
+
+.footerCopyright > p {
+  padding: 20px;
+  font-size: var(--fontSizePTagMobile);
+  font-weight: bold;
+  text-align: center;
+  color: var(--gold3);
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .footerContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 50px;
+  }
+
+  .footerContent > * { width: 400px }
+
+  .footerContent h2 { font-size: 18px; }
+
+  .footerContent li { font-size: 16px; }
+
+  .footerCopyright > p { font-size: 16px; }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .footerMap > iframe { height: 500px; }
+
+  .footerContent {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 100px;
+  }
+
+  .footerContent > * { margin: 50px; }
+
+  .footerContent h2 { font-size: 18px; }
+
+  .footerContent li { font-size: 16px; }
+
+  .footerCopyright > p { font-size: 16px; }
+}
