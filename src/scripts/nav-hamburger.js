@@ -58,7 +58,7 @@ const closeMenu = (time) => {
   navHamburgerBottomBar.style.animation = `navHamburgerBottomBarClose ${time}s forwards`;
 };
 
-const openMenu = (tine) => {
+const openMenu = (time) => {
   menuOpen = true;
   navLinks.style.animation = `navListOpen ${time}s forwards`;
   navHamburgerTopBar.style.animation = `navHamburgerTopBarOpen ${time}s forwards`;
