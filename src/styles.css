@@ -49,13 +49,13 @@ nav {
   background-color: #000000;
 }
 
-.navLogo {
+#navLogo {
   font-weight: bold;
   text-transform: uppercase;
   color: #ffd900;
 }
 
-.navLogo > span {
+#navLogo > span {
   color: #ac9200;
   margin-left: 5px;
 }
@@ -91,14 +91,16 @@ nav {
   height: 20px;
 }
 
-.navHamburgerTopBar, .navHamburgerMiddleBar, .navHamburgerBottomBar {
+#navHamburgerTopBar,
+#navHamburgerMiddleBar,
+#navHamburgerBottomBar {
   height: 4px;
   border-radius: 5px;
   background-color: #ffd900;
 }
 
 @media (min-width: 160px) and (max-width: 240px) {
-  .navLogo > span {
+  #navLogo > span {
     margin-left: 0px;
     display: block;
   }
@@ -113,12 +115,12 @@ nav {
     justify-content: center;
   }
 
-  .navLogo {
+  #navLogo {
     font-size: 8vw;
     margin-bottom: 5px;
   }
 
-  .navLogo > span {
+  #navLogo > span {
     margin-left: 0px;
     display: block;
   }
@@ -132,7 +134,9 @@ nav {
 
   #navLinks > li > a { font-size: 8vw; }
 
-  .navHamburgerTopBar, .navHamburgerMiddleBar, .navHamburgerBottomBar { height: 3px; }
+  #navHamburgerTopBar,
+  #navHamburgerMiddleBar, 
+  #navHamburgerBottomBar { height: 3px; }
 }
 
 /* Tablet and Desktop */
@@ -171,18 +175,16 @@ nav {
 
   #navLinks { transform: translateX(0vw); }
 
-  .navLogo { font-size: 1.5rem; }
+  #navLogo { font-size: 1.5rem; }
 }
 
-@keyframes navListClose {
-  from { transform: translateX(0vw); }
-  to { transform: translateX(-100vw); }
-}
+@keyframes navListClose { from { transform: translateX(0vw); } to { transform: translateX(-100vw); } }
+@keyframes navHamburgerTopBarClose { from { transform: translateX(100vw); } to { transform: translateX(0vw); } }
+@keyframes navHamburgerMiddleBarClose { from { transform: translateX(100vw); } to { transform: translateX(0vw); } }
 
-@keyframes navListOpen {
-  from { transform: translateX(-100vw); }
-  to { transform: translateX(0vw); }
-}
+@keyframes navListOpen { from { transform: translateX(-100vw); } to { transform: translateX(0vw); } }
+@keyframes navHamburgerTopBarOpen { from { transform: translateX(0vw); } to { transform: translateX(100vw); } }
+@keyframes navHamburgerMiddleBarOpen { from { transform: translateX(0vw); } to { transform: translateX(100vw); } }
 
 /* >>> Header <<< */
 
