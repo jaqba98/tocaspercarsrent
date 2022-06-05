@@ -125,11 +125,6 @@ nav {
     display: block;
   }
 
-  #navHamburger {
-    width: 10vw;
-    height: 10vw;
-  }
-
   #navLinks > li { padding: 5vw; }
 
   #navLinks > li > a { font-size: 8vw; }

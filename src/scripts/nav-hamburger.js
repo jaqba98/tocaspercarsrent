@@ -3,6 +3,9 @@ const navHamburgerTopBar = document.getElementById('navHamburgerTopBar');
 const navHamburgerMiddleBar = document.getElementById('navHamburgerMiddleBar');
 const navHamburgerBottomBar = document.getElementById('navHamburgerBottomBar');
 const navHamburger = document.getElementById('navHamburger');
+const homePage = document.getElementById('homePage');
+const ourCars = document.getElementById('ourCars');
+const gallery = document.getElementById('gallery');
 
 const DeviceTypeEnum = {
   mobile: 'mobile',
@@ -20,6 +23,7 @@ window.onload = () => {
 window.onresize = () => onResize();
 
 const onLoad = () => {
+  menuOpen = false;
   firstSwitchToMobile = true;
 };
 
@@ -38,34 +42,37 @@ const getDeviceType = () => {
 
 const switchToMobile = () => {
   firstSwitchToMobile = false;
-  menuOpen = false;
-  navLinks.style.animation = "navListClose 0s forwards";
-  navHamburgerTopBar.style.animation = "navHamburgerTopBarClose 0s forwards";
-  navHamburgerMiddleBar.style.animation = "navHamburgerMiddleBarClose 0s forwards";
-  navHamburgerBottomBar.style.animation = "navHamburgerBottomBarClose 0s forwards";
+  closeMenu(0);
 }
 
 const switchToTabletOrDesktop = () => {
   firstSwitchToMobile = true;
-  menuOpen = true;
-  navLinks.style.animation = "navListOpen 0s forwards";
-  navHamburgerTopBar.style.animation = "navHamburgerTopBarOpen 0s forwards";
-  navHamburgerMiddleBar.style.animation = "navHamburgerMiddleBarOpen 0s forwards";
-  navHamburgerBottomBar.style.animation = "navHamburgerBottomBarOpen 0s forwards";
+  openMenu(0);
 }
 
+const closeMenu = (time) => {
+  menuOpen = false;
+  navLinks.style.animation = `navListClose ${time}s forwards`;
+  navHamburgerTopBar.style.animation = `navHamburgerTopBarClose ${time}s forwards`;
+  navHamburgerMiddleBar.style.animation = `navHamburgerMiddleBarClose ${time}s forwards`;
+  navHamburgerBottomBar.style.animation = `navHamburgerBottomBarClose ${time}s forwards`;
+};
+
+const openMenu = (tine) => {
+  menuOpen = true;
+  navLinks.style.animation = `navListOpen ${time}s forwards`;
+  navHamburgerTopBar.style.animation = `navHamburgerTopBarOpen ${time}s forwards`;
+  navHamburgerMiddleBar.style.animation = `navHamburgerMiddleBarOpen ${time}s forwards`;
+  navHamburgerBottomBar.style.animation = `navHamburgerBottomBarOpen ${time}s forwards`;
+};
+
 navHamburger.addEventListener('click', () => {
-  if (menuOpen) {
-    menuOpen = false;
-    navLinks.style.animation = "navListClose 0.5s forwards";
-    navHamburgerTopBar.style.animation = "navHamburgerTopBarClose 0.5s forwards";
-    navHamburgerMiddleBar.style.animation = "navHamburgerMiddleBarClose 0.5s forwards";
-    navHamburgerBottomBar.style.animation = "navHamburgerBottomBarClose 0.5s forwards";
-  } else {
-    menuOpen = true;
-    navLinks.style.animation = "navListOpen 0.5s forwards";
-    navHamburgerTopBar.style.animation = "navHamburgerTopBarOpen 0.5s forwards";
-    navHamburgerMiddleBar.style.animation = "navHamburgerMiddleBarOpen 0.5s forwards";
-    navHamburgerBottomBar.style.animation = "navHamburgerBottomBarOpen 0.5s forwards";
-  }
+  const deviceType = getDeviceType();
+  if (deviceType !== DeviceTypeEnum.mobile) { return; }
+  if (menuOpen) { closeMenu(0.5); }
+  else { openMenu(0.5); }
 });
+
+homePage.addEventListener('click', () => closeMenu(0));
+ourCars.addEventListener('click', () => closeMenu(0));
+gallery.addEventListener('click', () => closeMenu(0));
