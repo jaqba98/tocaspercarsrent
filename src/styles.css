@@ -61,7 +61,6 @@ nav {
 }
 
 #navLinks {
-  visibility: hidden;
   position: fixed;
   top: 80px;
   bottom: 0px;
@@ -139,7 +138,6 @@ nav {
 /* Tablet and Desktop */
 @media (min-width: 768px) {
   #navLinks {
-    visibility: visible;
     display: flex;
     position: relative;
     top: 0px;
@@ -147,6 +145,7 @@ nav {
     left: 0px;
     right: 0px;
     background-color: inherit;
+    transform: translateX(0vw);
   }
   
   #navLinks > li {
@@ -170,7 +169,19 @@ nav {
 @media (min-width: 1024px) {
   nav { justify-content: space-around; }
 
+  #navLinks { transform: translateX(0vw); }
+
   .navLogo { font-size: 1.5rem; }
+}
+
+@keyframes navListClose {
+  from { transform: translateX(0vw); }
+  to { transform: translateX(-100vw); }
+}
+
+@keyframes navListOpen {
+  from { transform: translateX(-100vw); }
+  to { transform: translateX(0vw); }
 }
 
 /* >>> Header <<< */

@@ -7,6 +7,7 @@ const DeviceTypeEnum = {
   desktop: 'desktop'
 };
 
+let menuOpen = false;
 let firstSwitchToMobile = true;
 
 window.onload = () => {
@@ -34,14 +35,22 @@ const getDeviceType = () => {
 
 const switchToMobile = () => {
   firstSwitchToMobile = false;
-  navLinks.style.visibility = 'hidden';
+  menuOpen = false;
+  navLinks.style.animation = "navListClose 0s forwards";
 }
 
 const switchToTabletOrDesktop = () => {
   firstSwitchToMobile = true;
-  navLinks.style.visibility = 'visible';
+  menuOpen = true;
+  navLinks.style.animation = "navListOpen 0s forwards";
 }
 
 navHamburger.addEventListener('click', () => {
-   navLinks.style.visibility= navLinks.style.visibility === 'visible' ? 'hidden' : 'visible';
+  if (menuOpen) {
+    menuOpen = false;
+    navLinks.style.animation = "navListClose 0.5s forwards";
+  } else {
+    menuOpen = true;
+    navLinks.style.animation = "navListOpen 0.5s forwards";
+  }
 });
