@@ -179,12 +179,14 @@ nav {
 }
 
 @keyframes navListClose { from { transform: translateX(0vw); } to { transform: translateX(-100vw); } }
-@keyframes navHamburgerTopBarClose { from { transform: translateX(100vw); } to { transform: translateX(0vw); } }
+@keyframes navHamburgerTopBarClose { from { transform: translateY(8px) rotate(45deg); } to { transform: translateY(0px) rotate(0deg); } }
 @keyframes navHamburgerMiddleBarClose { from { transform: translateX(100vw); } to { transform: translateX(0vw); } }
+@keyframes navHamburgerBottomBarClose { from { transform: translateY(-8px) rotate(-45deg); } to { transform: translateY(0px) rotate(0deg); } }
 
 @keyframes navListOpen { from { transform: translateX(-100vw); } to { transform: translateX(0vw); } }
-@keyframes navHamburgerTopBarOpen { from { transform: translateX(0vw); } to { transform: translateX(100vw); } }
+@keyframes navHamburgerTopBarOpen { from { transform: translateY(0px) rotate(0deg); } to { transform: translateY(8px) rotate(45deg); } }
 @keyframes navHamburgerMiddleBarOpen { from { transform: translateX(0vw); } to { transform: translateX(100vw); } }
+@keyframes navHamburgerBottomBarOpen { from { transform: translateY(0px) rotate(0deg); } to { transform: translateY(-8px) rotate(-45deg); } }
 
 /* >>> Header <<< */
 

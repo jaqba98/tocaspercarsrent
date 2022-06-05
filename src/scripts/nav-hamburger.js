@@ -42,6 +42,7 @@ const switchToMobile = () => {
   navLinks.style.animation = "navListClose 0s forwards";
   navHamburgerTopBar.style.animation = "navHamburgerTopBarClose 0s forwards";
   navHamburgerMiddleBar.style.animation = "navHamburgerMiddleBarClose 0s forwards";
+  navHamburgerBottomBar.style.animation = "navHamburgerBottomBarClose 0s forwards";
 }
 
 const switchToTabletOrDesktop = () => {
@@ -50,6 +51,7 @@ const switchToTabletOrDesktop = () => {
   navLinks.style.animation = "navListOpen 0s forwards";
   navHamburgerTopBar.style.animation = "navHamburgerTopBarOpen 0s forwards";
   navHamburgerMiddleBar.style.animation = "navHamburgerMiddleBarOpen 0s forwards";
+  navHamburgerBottomBar.style.animation = "navHamburgerBottomBarOpen 0s forwards";
 }
 
 navHamburger.addEventListener('click', () => {
@@ -58,10 +60,12 @@ navHamburger.addEventListener('click', () => {
     navLinks.style.animation = "navListClose 0.5s forwards";
     navHamburgerTopBar.style.animation = "navHamburgerTopBarClose 0.5s forwards";
     navHamburgerMiddleBar.style.animation = "navHamburgerMiddleBarClose 0.5s forwards";
+    navHamburgerBottomBar.style.animation = "navHamburgerBottomBarClose 0.5s forwards";
   } else {
     menuOpen = true;
     navLinks.style.animation = "navListOpen 0.5s forwards";
     navHamburgerTopBar.style.animation = "navHamburgerTopBarOpen 0.5s forwards";
     navHamburgerMiddleBar.style.animation = "navHamburgerMiddleBarOpen 0.5s forwards";
+    navHamburgerBottomBar.style.animation = "navHamburgerBottomBarOpen 0.5s forwards";
   }
 });
