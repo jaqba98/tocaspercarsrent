@@ -146,8 +146,6 @@ nav {
     position: relative;
     top: 0px;
     bottom: 0px;
-    left: 0px;
-    right: 0px;
     background-color: inherit;
     transform: translateX(0vw);
   }
