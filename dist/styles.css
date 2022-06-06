@@ -766,3 +766,39 @@ footer { background-color: #000000; }
     width: calc(50% - 20px);
   }
 }
+
+/* ### Car ### */
+
+/* Mobile first*/
+#ourCar {
+  margin: 20px;
+}
+
+#ourCar img {
+  width: calc(100% - 40px);
+  height: 380px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+#ourCar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.carDescription h2,
+.carDescription h3 {
+  color: #ffd900;
+}
+
+.carDescription h2,
+.carDescription h3,
+.carDescription ul,
+.carDescription a { margin-top: 20px; }
+
+.carDescription li {
+  color: #aa9000;
+  margin-bottom: 5px;
+}
