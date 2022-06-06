@@ -63,7 +63,6 @@ nav {
 }
 
 #navLinks {
-  transform: translateX(-150vw);
   position: fixed;
   top: 80px;
   bottom: 0px;
@@ -189,19 +188,21 @@ nav {
 /* ### Header ### */
 
 header {
+  position: relative;
   width: 100%;
   height: 100vh;
-  height: calc(100vh - 80px);
 }
 
-header > video {
+.headerVideo,
+.headerSection { position: absolute; }
+
+.headerVideo {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: brightness(50%);
+  filter: brightness(25%);
 }
 
-/* 
 .headerSection {
   display: flex;
   flex-direction: column;
@@ -210,50 +211,61 @@ header > video {
   height: 50%;
   left: 0px;
   right: 0px;
-  bottom: 0px;
+  bottom: 50px;
 }
 
-.headerSection > h2, .headerSection > a { text-align: center; }
-
-.headerSection > h2 {
-  margin-bottom: 20px;
-  color: #ffd900;
-} */
-
-/*
-header > section > p {
-  font-size: 3vw;
-  color: var(--gold1);
-  font-weight: bold;
+.headerSection > h2,
+.headerSection > h3,
+.headerSection > a {
+  font-size: 18px;
   text-align: center;
-  margin-bottom: 30px;
-}
-
-header > section > a {
-  padding: 10px 20px;
-  border-radius: 25px;
-  font-size: 3vw;
-  border: 2px solid var(--gold1);
-  color: var(--gold1);
+  color: #ffd900;
   font-weight: bold;
-  -webkit-transition: all 0.5s ease-in-out;
-       -o-transition: all 0.5s ease-in-out;
-          transition: all 0.5s ease-in-out;
 }
 
-header > section > a:hover {
-  background-color: var(--gold1);
-  color: var(--dark1);
-} */
+.headerSection > h3 { margin-bottom: 20px; }
 
-/* tablet and desktop */
-/* @media (min-width: 768px) {
-  header { height: calc(800px - var(--navHeight)); }
+.headerSection > a {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 2px solid #ffd900;
+  font-weight: bold;
+  transition: all 0.5s ease-in-out;
+}
 
-  header > section > p { font-size: 1.5rem; }
+.headerSection > a:hover {
+  background-color: #ffd900;
+  color: #000000;
+}
 
-  header > section > a { font-size: 1rem; }
-} */
+@media (max-width: 360px) {
+  .headerSection { padding: 0px; }
+  
+  .headerSection > h2,
+  .headerSection > h3,
+  .headerSection > a {
+    font-size: 4vw;
+  }
+
+  .headerSection > h3 { margin-bottom: 5vw; }
+
+  .headerSection > a {
+    border-radius: 2px;
+    border: 1px solid #ffd900;
+    padding: 2vw 5vw;
+  }
+}
+
+/* Tablet and Desktop */
+@media (min-width: 768px) {
+  header { height: calc(800px - 80px); }
+
+  .headerSection > h2 { font-size: 28px; }
+
+  .headerSection > h3 { font-size: 24px; }
+
+  .headerSection > a { font-size: 18px; }
+}
 
 /* >>> Why Choose Us <<< */
 
