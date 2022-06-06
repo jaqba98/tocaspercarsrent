@@ -731,7 +731,7 @@ footer { background-color: #000000; }
   }
 }
 
-/* Tablet and Desktop*/
+/* Tablet and Desktop */
 @media (min-width: 768px) {
   #ourCarsItems {
     display: flex;
@@ -748,4 +748,25 @@ footer { background-color: #000000; }
 
 @media (min-width: 1024px) {
   .ourCarsContent { width: 960px; }
+}
+
+/* ### Gallery ### */
+
+/* Mobile first */
+#ourCarsGallery > img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  #ourCarsGallery {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #ourCarsGallery > img {
+    margin: 10px;
+    width: calc(50% - 20px);
+  }
 }
