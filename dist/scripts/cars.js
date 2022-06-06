@@ -144,7 +144,7 @@ const loadCars = () => {
                     <li>Przyśpieszenie: 0-100 km/h: ${car.acceleration}s</li>
                     <li>Maksymalna prędkość: ${car.maximumSpeed}km/h</li>
                 </ul>
-                <a href="/${car.url}">Cennik</a>
+                <a href="car.html?id=${car.id}">Cennik</a>
             </div>
         </section>
     `).forEach(carTag => ourCarsItems.innerHTML += carTag);
