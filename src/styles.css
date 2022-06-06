@@ -188,6 +188,7 @@ nav {
 
 /* ### Header ### */
 
+/* Mobile first */
 header {
   position: relative;
   width: 100%;
@@ -267,6 +268,7 @@ header {
 
 /* >>> Why Choose Us <<< */
 
+/* Mobile first */
 .whyChooseUs {
   background-image: url('assets/backgrounds/cupra-formentor-vz5.jpg');
   background-size: cover;
@@ -370,34 +372,54 @@ header {
 /* >>> About us <<< */
 
 /* Mobile */
-/* .aboutUs {
-  display: flex;
-  justify-content: center;
-  padding: 50px 25px;
+.aboutUs {
+  padding: 60px 30px;
   background-color: var(--dark1);
 }
 
-.aboutUsContent h2,
-.aboutUsContent h3,
-.aboutUsContent p { margin-bottom: 20px; }
+.aboutUsContent > h2,
+.aboutUsContent > h3,
+.aboutUsContent > p { margin-bottom: 20px; }
 
-.aboutUsContent h2 { color: var(--gold1); }
+.aboutUsContent > h2,
+.aboutUsContent > h3 {
+  color: #ffd900;
+}
 
-.aboutUsContent h3 { color: var(--gold2); }
+.aboutUsContent > p {
+  color: #978100;
+  text-align: justify;
+}
 
-.aboutUs h2,
+.aboutUs h2 { font-size: 24px; }
+
 .aboutUs h3 { font-size: 18px; }
 
-.aboutUs p {
-  text-align: justify;
-  color: var(--gold3);
-  font-size: 16px;
-} */
+@media (max-width: 360px) {
+  .aboutUs {
+    padding: 10vw 8vw;
+    background-color: var(--dark1);
+  }
 
-/* Desktop */
-/* @media (min-width: 1024px) {
+  .aboutUs h2 { font-size: 5vw; }
+
+  .aboutUs h3,
+  .aboutUs p { font-size: 4vw; }
+
+  .aboutUsContent > h2,
+  .aboutUsContent > h3,
+  .aboutUsContent > p { margin-bottom: 4vw; }
+}
+
+/* Desktop and Desktop */
+@media (min-width: 768px) {
+  .aboutUs {
+    display: flex;
+    justify-content: center;
+  }
+  
   .aboutUsContent { width: 960px }
-} */
+}
 
 /* >>> Cooperation And Sponsors <<< */
 
