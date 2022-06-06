@@ -640,7 +640,7 @@ footer { background-color: #000000; }
 
 /* ### Our Cars ### */
 
-.ourCars {
+/* .ourCars {
   display: flex;
   justify-content: center;
   padding: 50px;
@@ -724,4 +724,4 @@ a:hover {
       height: 100%;
       margin-bottom: 20px;
   }
-}
+} */
