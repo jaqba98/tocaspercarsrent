@@ -3,9 +3,6 @@ const navHamburgerTopBar = document.getElementById('navHamburgerTopBar');
 const navHamburgerMiddleBar = document.getElementById('navHamburgerMiddleBar');
 const navHamburgerBottomBar = document.getElementById('navHamburgerBottomBar');
 const navHamburger = document.getElementById('navHamburger');
-const homePage = document.getElementById('homePage');
-const ourCars = document.getElementById('ourCars');
-const gallery = document.getElementById('gallery');
 
 const DeviceTypeEnum = {
   mobile: 'mobile',
@@ -72,7 +69,3 @@ navHamburger.addEventListener('click', () => {
   if (menuOpen) { closeMenu(0.5); }
   else { openMenu(0.5); }
 });
-
-homePage.addEventListener('click', () => closeMenu(0));
-ourCars.addEventListener('click', () => closeMenu(0));
-gallery.addEventListener('click', () => closeMenu(0));
