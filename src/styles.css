@@ -295,7 +295,10 @@ header {
 
 .whyChooseUsItem > h3 { color: #ffd900; }
 
-.whyChooseUsItem > p { color: #ad9300; }
+.whyChooseUsItem > p {
+  font-weight: bold;
+  color: #ad9300;
+}
 
 .whyChooseUsItem > .material-symbols-outlined {
   color: #000000;
