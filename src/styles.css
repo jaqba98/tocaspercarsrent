@@ -63,6 +63,7 @@ nav {
 }
 
 #navLinks {
+  transform: translateX(-100vw);
   position: fixed;
   top: 80px;
   bottom: 0px;
@@ -292,8 +293,9 @@ header {
   text-align: center;
 }
 
-.whyChooseUsItem > h3,
-.whyChooseUsItem > p { color: #ffd900; }
+.whyChooseUsItem > h3 { color: #ffd900; }
+
+.whyChooseUsItem > p { color: #ad9300; }
 
 .whyChooseUsItem > .material-symbols-outlined {
   color: #000000;
