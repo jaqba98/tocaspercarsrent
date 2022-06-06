@@ -391,7 +391,7 @@ header {
 .aboutUsContent > p {
   color: #978100;
   font-weight: bold;
-  text-align: justify;
+  text-align: left;
 }
 
 @media (max-width: 360px) {
