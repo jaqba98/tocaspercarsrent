@@ -392,10 +392,6 @@ header {
   text-align: justify;
 }
 
-.aboutUs h2 { font-size: 24px; }
-
-.aboutUs h3 { font-size: 18px; }
-
 @media (max-width: 360px) {
   .aboutUs {
     padding: 10vw 8vw;
@@ -481,7 +477,7 @@ header {
   
   .cooperationShadow > h2,
   .cooperationShadow > h3,
-  .cooperationShadow > ul > li { font-size: 5vw; }
+  .cooperationShadow > ul > li { font-size: 4vw; }
 }
 
 /* >>> Sponsors <<< */
@@ -495,7 +491,7 @@ header {
   width: 100%;
   height: 100%;
   padding: 50px;
-  background-color: #ceaf00;
+  background-color: #d8b800;
 }
 
 .sponsors h2 {
@@ -515,7 +511,7 @@ header {
   .sponsors h2 { margin-bottom: 5vw; }
   
   .sponsors > h2,
-  .sponsors > ul > li { font-size: 5vw; }
+  .sponsors > ul > li { font-size: 4vw; }
 }
 
 /* >>> Footer <<< */
