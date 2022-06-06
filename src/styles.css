@@ -527,7 +527,7 @@ footer { background-color: #000000; }
   filter: invert(90%);
 }
 
-.footerContent { padding: 30px; }
+.footerContent { padding: 60px 30px; }
 
 .footerMenu,
 .footerContact,
