@@ -640,88 +640,110 @@ footer { background-color: #000000; }
 
 /* ### Our Cars ### */
 
-/* .ourCars {
+.ourCars {
   display: flex;
   justify-content: center;
   padding: 50px;
   background-color: #000000;
 }
 
-.cars { width: 960px; }
-
-.car {
-  display: -webkit-box;
-  display: -ms-flexbox;
-         display: flex;
-  -webkit-box-align: start;
-     -ms-flex-align: start;
-   align-items: flex-start;
-       -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-  justify-content: space-between;
-  margin: 50px 0;
+.ourCarsContent > h2 {
+  color: #ffd900;
+  margin-bottom: 20px;
 }
 
+.car { margin-bottom: 100px; }
+
 .carImage > img {
-  width: 640px;
+  width: 100%;
   height: 380px;
-  margin-right: 50px;
   border-radius: 5px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .carDescription {
-  width: 320px;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  width: 100%;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-     -ms-flex-direction: column;
-         flex-direction: column;
-  -webkit-box-pack: center;
-     -ms-flex-pack: center;
-   justify-content: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
-h2, h3 { color: var(--gold1); }
+.carDescription h2,
+.carDescription h3 {
+  color: #ffd900;
+}
 
-h3 { margin-bottom: 20px; }
+.carDescription h2,
+.carDescription h3,
+.carDescription ul,
+.carDescription a { margin-top: 20px; }
 
-ul { margin-bottom: 20px; }
-
-li {
-  color: var(--gold2);
+.carDescription li {
+  color: #aa9000;
   margin-bottom: 5px;
 }
 
-a {
+.carDescription a {
   padding: 10px 20px;
-  border-radius: 25px;
-  border: 1px solid var(--gold1);
-  color: var(--gold1);
+  border-radius: 5px;
+  border: 1px solid #ffd900;
+  color: #ffd900;
   font-weight: bold;
-  -webkit-transition: all 0.5s ease-in-out;
-       -o-transition: all 0.5s ease-in-out;
-          transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
-a:hover {
-  background-color: var(--gold1);
-  color: var(--dark1);
+.carDescription a:hover {
+  background-color: #ffd900;
+  color: #000000;
 }
 
-@media (max-width: 1023px) {
-  .car { display: block; }
-
-  .cars { width: 100%; }
-
-  .carDescription { width: 100%; }
-
-  .carImage > img {
-      width: 100%;
-      height: 100%;
-      margin-bottom: 20px;
+@media (max-width: 360px) {
+  .ourCars { padding: 5vw; }
+  
+  .ourCarsContent > h2 {
+    font-size: 5vw;
+    margin-bottom: 5vw;
   }
-} */
+  
+  .car { margin-bottom: 25vw; }
+  
+  .carImage > img {
+    width: 100%;
+    height: 75vw;
+    border-radius: 0px;
+  }
+  
+  .carDescription h2,
+  .carDescription h3,
+  .carDescription ul,
+  .carDescription a {
+    font-size: 5vw;
+    margin-top: 5vw;
+  }
+  
+  .carDescription li { margin-bottom: 5vw; }
+  
+  .carDescription a {
+    padding: 5vw 10vw;
+    border-radius: 3px;
+  }
+}
+
+/* Tablet and Desktop*/
+@media (min-width: 768px) {
+  #ourCarsItems {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .ourCarsContent > h2 { margin: 10px; }
+
+  .car {
+    flex: calc(50% - 20px);
+    margin: 10px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .ourCarsContent { width: 960px; }
+}
