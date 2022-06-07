@@ -395,10 +395,7 @@ header {
   color: #ffd900;
 }
 
-.aboutUsContent > p {
-  color: #b19600;
-  font-weight: bold;
-}
+.aboutUsContent > p { color: #b19600; }
 
 @media (max-width: 360px) {
   .aboutUs { padding: 10vw 8vw; }
@@ -438,7 +435,7 @@ header {
 
 /* >>> Cooperation <<< */
 
-/* Mobile first */
+/* Mobile */
 .cooperation {
   display: flex;
   flex-direction: column;
@@ -453,7 +450,7 @@ header {
   background-repeat: no-repeat;
 }
 
-.cooperationShadow {
+.cooperationContent {
   width: 100%;
   height: 100%;
   padding: 50px;
@@ -464,25 +461,25 @@ header {
   background-color: rgba(0, 0, 0, 0.75);
 }
 
-.cooperationShadow > h2,
-.cooperationShadow > h3 { color: #ffd900; }
+.cooperationContent > h2,
+.cooperationContent > h3 { color: #ffd900; }
 
-.cooperationShadow > h3 { margin-bottom: 20px; }
+.cooperationContent > h3 { margin-bottom: 20px; }
 
-.cooperationShadow > ul > li {
+.cooperationContent > ul > li {
   font-weight: bold;
   color: #b19600;
   text-align: center;
 }
 
 @media (max-width: 360px) {
-  .cooperationShadow { padding: 10vw; }
+  .cooperationContent { padding: 10vw; }
   
-  .cooperationShadow > h3 { margin-bottom: 5vw; }
+  .cooperationContent > h3 { margin-bottom: 5vw; }
   
-  .cooperationShadow > h2,
-  .cooperationShadow > h3,
-  .cooperationShadow > ul > li { font-size: 4vw; }
+  .cooperationContent > h2,
+  .cooperationContent > h3,
+  .cooperationContent > ul > li { font-size: 4vw; }
 }
 
 /* >>> Sponsors <<< */
