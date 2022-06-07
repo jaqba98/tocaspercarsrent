@@ -383,12 +383,12 @@ header {
 /* Mobile */
 .aboutUs {
   padding: 60px 30px;
-  background-color: var(--dark1);
+  background-color: #000000;
 }
 
 .aboutUsContent > h2,
 .aboutUsContent > h3,
-.aboutUsContent > p { margin-bottom: 20px; }
+.aboutUsContent > p { margin-bottom: 10px; }
 
 .aboutUsContent > h2,
 .aboutUsContent > h3 {
@@ -396,16 +396,12 @@ header {
 }
 
 .aboutUsContent > p {
-  color: #978100;
+  color: #b19600;
   font-weight: bold;
-  text-align: left;
 }
 
 @media (max-width: 360px) {
-  .aboutUs {
-    padding: 10vw 8vw;
-    background-color: var(--dark1);
-  }
+  .aboutUs { padding: 10vw 8vw; }
 
   .aboutUs h2 { font-size: 5vw; }
 
@@ -417,7 +413,7 @@ header {
   .aboutUsContent > p { margin-bottom: 4vw; }
 }
 
-/* Desktop and Desktop */
+/* Tablet and Desktop */
 @media (min-width: 768px) {
   .aboutUs {
     display: flex;
