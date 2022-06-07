@@ -321,10 +321,7 @@ header {
   margin-bottom: 10px;
 }
 
-.whyChooseUsElement > p {
-  font-weight: bold;
-  color: #ad9300;
-}
+.whyChooseUsElement > p { color: #ad9300; }
 
 @media (max-width: 360px) {
   .whyChooseUsContent { padding: 20vw 5vw; }
