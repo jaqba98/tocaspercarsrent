@@ -204,7 +204,7 @@ nav {
 /* ### Header ### */
 
 /* Mobile */
-/* header {
+header {
   position: relative;
   width: 100%;
   height: calc(100vh - 60px);
@@ -258,9 +258,9 @@ nav {
 .headerSection > a:hover {
   background-color: #ffd900;
   color: #000000;
-} */
+}
 
-/* @media (max-width: 360px) {
+@media (max-width: 360px) {
   .headerSection { padding: 10vw 0px; }
 
   .headerSection > h2,
@@ -276,16 +276,16 @@ nav {
     border: 1px solid #ffd900;
     padding: 2vw 5vw;
   }
-} */
+}
 
 /* Tablet and Desktop */
-/* @media (min-width: 768px) {
+@media (min-width: 768px) {
   header { height: calc(800px - 80px); }
 
   .headerSection > h2 { font-size: 28px; }
 
   .headerSection > h3 { font-size: 24px; }
-} */
+}
 
 /* >>> Why Choose Us <<< */
 
