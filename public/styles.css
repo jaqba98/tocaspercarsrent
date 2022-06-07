@@ -1,9 +1,21 @@
+/*
+  navHeight = 60px
+  gold1 = ffd900
+  gold2 = b19600
+  white1 = ffffff
+  white2 = ebebeb
+  black1 = 000000
+  grey1 = 646464
+*/
+
 /* ### Imports ### */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0');
 
+/* ### Fonts ### */
 @font-face {
-  font-family: "SocialMediaCircled";
-  src: url("assets/fonts/Social Media Circled.otf");
+  font-family: 'Social Media Circled';
+  src: url('assets/fonts/Social Media Circled.otf');
 }
 
 /* ### Reset ### */
@@ -11,42 +23,48 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
 }
 
-ul { list-style: none; }
+ul { list-style-type: none; }
 
-a { text-decoration: none; }
+a { text-decoration-line: none; }
 
 /* ### General ### */
 body {
   color: #ffffff;
   background-color: #000000;
+  font-family: 'Roboto', sans-serif;
 }
 
 main { margin-top: 80px; }
 
 /* ### Scrollbar ### */
+/* Mobile, Tablet and Desktop */
 ::-webkit-scrollbar { width: 15px; }
-
-@media (max-width: 160px) {
-  ::-webkit-scrollbar { width: 5px; }
-}
 
 ::-webkit-scrollbar-track { background-color: #000000; }
 
-::-webkit-scrollbar-thumb { background-color: #ffd900; }
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #ffd900;
+}
+
+@media (max-width: 240px) {
+  ::-webkit-scrollbar { width: 5vw; }
+
+  ::-webkit-scrollbar-thumb { border-radius: 2vw; }
+}
 
 /* ### Nav ### */
-/* Mobile first */
+/* Mobile */
 nav {
   z-index: 1;
   position: fixed;
   top: 0px;
   left: 0px;
   right: 0px;
-  height: 80px;
-  padding: 20px;
+  height: 60px;
+  padding: 25px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -54,39 +72,33 @@ nav {
 }
 
 #navLogo {
-  font-weight: bold;
   text-transform: uppercase;
   color: #ffd900;
+  font-weight: bold;
 }
 
 #navLogo > span {
-  color: #ac9200;
+  color: #b19600;
   margin-left: 5px;
 }
 
 #navLinks {
   transform: translateX(-100vw);
   position: fixed;
-  top: 80px;
+  top: 60px;
   bottom: 0px;
   left: 0px;
   right: 0px;
   overflow-y: auto;
-  background-color: #eeeeee;
+  background-color: #ffffff;
 }
 
 #navLinks > li {
   padding: 20px;
-  border-bottom: 1px solid #dadada;
+  border-bottom: 1px solid #ebebeb;
 }
 
-#navLinks > li > a {
-  font-size: 18px;
-  color: #808080;
-  transition: color 0.25s ease-in-out;
-}
-
-#navLinks > li > a:hover { color: #000000; }
+#navLinks > li > a { color: #646464; }
 
 #navHamburger {
   display: flex;
@@ -104,25 +116,30 @@ nav {
   background-color: #ffd900;
 }
 
-@media (min-width: 160px) and (max-width: 240px) {
+@media (min-width: 160px) and (max-width: 250px) {
+  nav {
+    padding: 10px;
+    justify-content: space-around;
+  }
+
   #navLogo > span {
     margin-left: 0px;
     display: block;
   }
 
+  #navLinks > li { padding: 20px 10px; }
+
   #navLinks > li > a { font-size: 8vw; }
 }
 
-@media (max-width: 160px) {
+@media (max-width: 159px) {
   nav {
     padding: 0px;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
   }
 
   #navLogo {
-    font-size: 8vw;
-    margin-bottom: 5px;
+    font-size: 10vw;
   }
 
   #navLogo > span {
@@ -131,6 +148,8 @@ nav {
   }
 
   #navLinks > li { padding: 5vw; }
+
+  #navLinks > li > a { font-size: 8vw; }
 
   #navHamburgerTopBar,
   #navHamburgerMiddleBar, 
@@ -145,7 +164,7 @@ nav {
     top: 0px;
     bottom: 0px;
     background-color: inherit;
-    transform: translateX(0vw);
+    transform: translateX(0px);
   }
   
   #navLinks > li {
@@ -154,8 +173,7 @@ nav {
   }
   
   #navLinks > li > a {
-    color: #ac9200;
-    font-size: 16px;
+    color: #b19600;
     font-weight: bold;
     transition: color 0.25s ease-in-out;
   }
@@ -169,11 +187,10 @@ nav {
 @media (min-width: 1024px) {
   nav { justify-content: space-around; }
 
-  #navLinks { transform: translateX(0vw); }
-
-  #navLogo { font-size: 1.5rem; }
+  #navLogo { font-size: 24px; }
 }
 
+/* Nav Mobile Animations */
 @keyframes navListClose { from { transform: translateX(0vw); } to { transform: translateX(-100vw); } }
 @keyframes navHamburgerTopBarClose { from { transform: translateY(8px) rotate(45deg); } to { transform: translateY(0px) rotate(0deg); } }
 @keyframes navHamburgerMiddleBarClose { from { transform: translateX(100vw); } to { transform: translateX(0vw); } }
