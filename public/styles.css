@@ -37,7 +37,10 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-main { margin-top: 60px; }
+main {
+  margin-top: 60px;
+  padding: 50px 0px;
+}
 
 /* ### Scrollbar ### */
 /* Mobile, Tablet and Desktop */
@@ -746,4 +749,57 @@ footer { background-color: #000000; }
   }
 
   .ourCarsContent { width: 960px; }
+}
+
+/* ### Gallery ### */
+
+/* Mobile */
+.galleryContent > h2 {
+  color: #ffd900;
+  padding: 25px;
+}
+
+#galleryElements > img {
+  width: calc(100% - 20px);
+  height: 380px;
+  margin: 10px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+@media (max-width: 360px) {
+  .galleryContent > h2 {
+    font-size: 5vw;
+    padding: 10vw 5vw;
+  }
+
+  #galleryElements > img {
+    width: calc(100% - 10vw);
+    height: 70vw;
+    margin: 5vw;
+    border-radius: 2vw;
+  }
+}
+
+/* Tablet and Desktop */
+@media (min-width: 768px) {
+  .gallery {
+    display: flex;
+    justify-content: center;
+  }
+
+  .galleryContent { width: 960px; }
+
+  .galleryContent > h2 { padding: 25px 10px; }
+
+  #galleryElements {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #galleryElements > img {
+    width: calc(50% - 20px);
+    height: 365px;
+    border-radius: 5px;
+  }
 }

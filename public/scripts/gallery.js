@@ -1,9 +1,15 @@
-const showGallery = () => {
-    const ourCarsGallery = document.getElementById('ourCarsGallery');
-    getCars().map(car => ({ id: car.id, name: car.name, photos: car.photos}))
+const createImageElement = (car) => {
+    return `<img src="assets/our-cars/${car.id}/${car.photo}" alt="${car.name}">`;
+};
+
+const loadAllImages = () => {
+    const galleryElements = document.getElementById('galleryElements');
+    getCarsList()
+        .map(car => ({ id: car.id, name: car.name, photos: car.photos }))
         .map(car => car.photos.map(photo => ({id: car.id, name: car.name, photo: photo})))
         .flat()
-        .map(car => `<img src="assets/our-cars/${car.id}/${car.photo}" alt="${car.name}">`)
-        .forEach(carTag => ourCarsGallery.innerHTML += carTag);
+        .map(car => createImageElement(car))
+        .forEach(car => galleryElements.innerHTML += car);
 };
-showGallery();
+
+loadAllImages();
