@@ -515,7 +515,7 @@ header {
 
 /* >>> Footer <<< */
 
-/* Mobile first */
+/* Mobile */
 footer { background-color: #000000; }
 
 .footerMap > iframe {
@@ -533,23 +533,24 @@ footer { background-color: #000000; }
 .footerMenu > ul { margin-bottom: 50px; }
 
 .footerContent h2 {
-  font-size: 18px;
   color: #ffd900;
   margin-bottom: 10px;
 }
 
 .footerContent p {
-  font-size: 16px;
-  font-weight: bold;
-  color: #c7a900;
+  color: #b19600;
   margin-bottom: 10px;
+  font-weight: bold;
 }
 
 .footerContent li {
-  font-size: 16px;
+  color: #b19600;
+  margin-bottom: 10px;
+}
+
+.footerContent li > span {
+  color: #ffd900;
   font-weight: bold;
-  color: #8b7700;
-  margin-bottom: 5px;
 }
 
 .socialMediaContainer {
@@ -558,13 +559,12 @@ footer { background-color: #000000; }
 }
 
 .socialMedia {
-  font-family: 'SocialMediaCircled';
+  font-family: 'Social Media Circled';
   font-size: 40px;
 }
 
 .footerContent a {
-  color: #6d5d00;
-  font-size: 16px;
+  color: #b19600;
   transition: color .5s ease-in-out;
 }
 
@@ -572,7 +572,6 @@ footer { background-color: #000000; }
 
 .footerCopyright > p {
   padding: 20px;
-  font-size: 16px;
   text-align: center;
   font-weight: bold;
   color: #ffd900;
@@ -602,13 +601,11 @@ footer { background-color: #000000; }
     margin-bottom: 3vw;
   }
 
-  .socialMedia {
-    font-size: 5vw;
-  }
+  .footerContent li > span { display: block; }
 
-  .footerContent a {
-    font-size: 5vw;
-  }
+  .socialMedia { font-size: 5vw; }
+
+  .footerContent a { font-size: 5vw; }
 
   .footerCopyright > p {
     padding: 5vw;
@@ -621,20 +618,22 @@ footer { background-color: #000000; }
   .footerContent {
     display: flex;
     justify-content: center;
+    padding: 60px 0px;
   }
 
-  .footerContent > * { margin: 20px; }
+  .footerContent > * { margin: 10px; }
 
   .footerContact span { display: block; }
 }
 
+/* Desktop */
 @media (min-width: 1024px) {
   .footerContent {
     display: flex;
     justify-content: center;
   }
 
-  .footerContent > * { margin: 20px; }
+  .footerContent > * { margin: 10px; }
 }
 
 /* ### Our Cars ### */
