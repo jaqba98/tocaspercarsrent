@@ -39,15 +39,15 @@ const getDeviceType = () => {
 
 const switchToMobile = () => {
   firstSwitchToMobile = false;
-  closeMenu(0);
+  closeMenu();
 }
 
 const switchToTabletOrDesktop = () => {
   firstSwitchToMobile = true;
-  openMenu(0);
+  openMenu();
 }
 
-const closeMenu = (time) => {
+const closeMenu = (time = 0) => {
   menuOpen = false;
   navLinks.style.animation = `navListClose ${time}s forwards`;
   navHamburgerTopBar.style.animation = `navHamburgerTopBarClose ${time}s forwards`;
@@ -55,7 +55,7 @@ const closeMenu = (time) => {
   navHamburgerBottomBar.style.animation = `navHamburgerBottomBarClose ${time}s forwards`;
 };
 
-const openMenu = (time) => {
+const openMenu = (time = 0) => {
   menuOpen = true;
   navLinks.style.animation = `navListOpen ${time}s forwards`;
   navHamburgerTopBar.style.animation = `navHamburgerTopBarOpen ${time}s forwards`;
@@ -66,6 +66,9 @@ const openMenu = (time) => {
 navHamburger.addEventListener('click', () => {
   const deviceType = getDeviceType();
   if (deviceType !== DeviceTypeEnum.mobile) { return; }
-  if (menuOpen) { closeMenu(0.5); }
-  else { openMenu(0.5); }
+  if (menuOpen) {
+    closeMenu(0.5);
+  } else {
+    openMenu(0.5);
+  }
 });
