@@ -1,4 +1,4 @@
-const getCars = () => {
+const getCarsList = () => {
   return [
     {
       id: 'cupra-ateca',
