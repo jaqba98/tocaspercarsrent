@@ -525,34 +525,17 @@ footer { background-color: #000000; }
 }
 
 @media (max-width: 360px) {
-  .footerContent { padding: 5vw; }
+  .footerContent { padding: 10vw; }
 
   .footerMenu,
-  .footerContact,
-  .footerSocialMedia { margin-bottom: 15vw; }
+  .footerContact { margin-bottom: 10vw; }
 
-  .footerMenu > ul { margin-bottom: 15vw; }
-
-  .footerContent h2 {
-    font-size: 5vw;
-    margin-bottom: 5vw;
-  }
-
-  .footerContent p {
-    font-size: 4vw;
-    margin-bottom: 5vw;
-  }
+  .footerContent h2 { font-size: 5vw; }
 
   .footerContent li {
     font-size: 4vw;
-    margin-bottom: 3vw;
+    margin-bottom: 2vw;
   }
-
-  .footerContent li > span { display: block; }
-
-  .socialMedia { font-size: 5vw; }
-
-  .footerContent a { font-size: 5vw; }
 
   .footerCopyright > p {
     padding: 5vw;
