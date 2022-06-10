@@ -332,10 +332,7 @@ header {
 .aboutUsContent > h2,
 .aboutUsContent > h3 { color: #ffd900; }
 
-.aboutUsContent > p {
-  text-align: justify;
-  color: #b19600;
-}
+.aboutUsContent > p { color: #b19600; }
 
 @media (max-width: 360px) {
   .aboutUs { padding: 10vw; }
