@@ -319,8 +319,6 @@ header {
 }
 
 /* >>> About us <<< */
-
-/* Mobile */
 .aboutUs {
   padding: 50px;
   background-color: #000000;
@@ -361,16 +359,11 @@ header {
 @media (min-width: 768px) {
   .cooperationAndSponsors {
     display: flex;
-    height: 250px;
+    height: 300px;
   }
-
-  .cooperationAndSponsors > .cooperation,
-  .cooperationAndSponsors > .sponsors { flex: 1; }
 }
 
 /* >>> Cooperation <<< */
-
-/* Mobile */
 .cooperation {
   display: flex;
   flex-direction: column;
@@ -393,33 +386,36 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
-.cooperationContent > h2,
-.cooperationContent > h3 { color: #ffd900; }
-
-.cooperationContent > h3 { margin-bottom: 20px; }
+.cooperationContent > h2 {
+  color: #ffd900;
+  margin-bottom: 10px;
+}
 
 .cooperationContent > ul > li {
   font-weight: bold;
-  color: #b19600;
+  color: #ffd900;
   text-align: center;
+  margin-top: 5px;
 }
 
 @media (max-width: 360px) {
   .cooperationContent { padding: 10vw; }
   
-  .cooperationContent > h3 { margin-bottom: 5vw; }
+  .cooperationContent > h2 {
+    font-size: 5vw;
+    margin-bottom: 2vw;
+  }
   
-  .cooperationContent > h2,
-  .cooperationContent > h3,
-  .cooperationContent > ul > li { font-size: 4vw; }
+  .cooperationContent > ul > li {
+    margin-top: 2vw;
+    font-size: 3vw;
+  }
 }
 
 /* >>> Sponsors <<< */
-
-/* Mobile first */
 .sponsors {
   display: flex;
   flex-direction: column;
@@ -433,72 +429,86 @@ header {
 
 .sponsors h2 {
   color: #000000;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .sponsors > ul > li {
   font-weight: bold;
   color: #000000;
   text-align: center;
+  margin-top: 5px;
 }
 
 @media (max-width: 360px) {
   .sponsors { padding: 10vw; }
   
-  .sponsors h2 { margin-bottom: 5vw; }
+  .sponsors h2 {
+    font-size: 5vw;
+    margin-bottom: 2vw;
+  }
   
-  .sponsors > h2,
-  .sponsors > ul > li { font-size: 4vw; }
+  .sponsors > ul > li {
+    margin-top: 2vw;
+    font-size: 3vw;
+  }
 }
 
 /* >>> Footer <<< */
-
-/* Mobile */
 footer { background-color: #000000; }
 
 .footerMap > iframe {
   width: 100%;
   height: 50vh;
   filter: invert(90%);
+  margin-bottom: -3px;
 }
 
-.footerContent { padding: 60px 30px; }
+.footerSocialMedia { display: flex; }
+
+.footerSocialMedia > a {
+  flex: 1;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  font-weight: bold;
+  opacity: 0.75;
+  transition: opacity 0.25s ease-in-out;
+}
+
+.footerSocialMedia > a:hover { opacity: 1; }
+
+.facebook { background-color: #4267B2; }
+
+.instagram { background-color:  #8a3ab9; }
+
+@media (max-width: 360px) {
+  .footerSocialMedia { flex-direction: column; }
+
+  .footerSocialMedia > a {
+    padding: 5vw;
+    font-size: 5vw;
+  }
+}
+
+.footerContent { padding: 50px; }
 
 .footerMenu,
-.footerContact,
-.footerSocialMedia { margin-bottom: 50px; }
-
-.footerMenu > ul { margin-bottom: 50px; }
+.footerContact { margin-bottom: 25px; }
 
 .footerContent h2 {
   color: #ffd900;
   margin-bottom: 10px;
 }
 
-.footerContent p {
-  color: #b19600;
-  margin-bottom: 10px;
-  font-weight: bold;
-}
-
 .footerContent li {
   color: #b19600;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .footerContent li > span {
+  display: block;
   color: #ffd900;
   font-weight: bold;
-}
-
-.socialMediaContainer {
-  display: flex;
-  align-items: center;
-}
-
-.socialMedia {
-  font-family: 'Social Media Circled';
-  font-size: 40px;
 }
 
 .footerContent a {
@@ -511,8 +521,7 @@ footer { background-color: #000000; }
 .footerCopyright > p {
   padding: 20px;
   text-align: center;
-  font-weight: bold;
-  color: #ffd900;
+  color: #b19600;
 }
 
 @media (max-width: 360px) {
@@ -551,19 +560,6 @@ footer { background-color: #000000; }
   }
 }
 
-/* Tablet */
-@media (min-width: 768px) and (max-width: 1023px) {
-  .footerContent {
-    display: flex;
-    justify-content: center;
-    padding: 60px 0px;
-  }
-
-  .footerContent > * { margin: 10px; }
-
-  .footerContact span { display: block; }
-}
-
 /* Desktop */
 @media (min-width: 1024px) {
   .footerContent {
@@ -571,7 +567,7 @@ footer { background-color: #000000; }
     justify-content: center;
   }
 
-  .footerContent > * { margin: 10px; }
+  .footerContent > * { margin: 0px 20px; }
 }
 
 /* ### Our Cars ### */
