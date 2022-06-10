@@ -322,32 +322,30 @@ header {
 
 /* Mobile */
 .aboutUs {
-  padding: 60px 30px;
+  padding: 50px;
   background-color: #000000;
 }
 
-.aboutUsContent > h2,
 .aboutUsContent > h3,
-.aboutUsContent > p { margin-bottom: 10px; }
+.aboutUsContent > p { margin-top: 15px; }
 
 .aboutUsContent > h2,
-.aboutUsContent > h3 {
-  color: #ffd900;
+.aboutUsContent > h3 { color: #ffd900; }
+
+.aboutUsContent > p {
+  text-align: justify;
+  color: #b19600;
 }
 
-.aboutUsContent > p { color: #b19600; }
-
 @media (max-width: 360px) {
-  .aboutUs { padding: 10vw 8vw; }
+  .aboutUs { padding: 10vw; }
 
-  .aboutUs h2 { font-size: 5vw; }
-
+  .aboutUs h2,
   .aboutUs h3,
-  .aboutUs p { font-size: 4vw; }
+  .aboutUs p { font-size: 5vw; }
 
-  .aboutUsContent > h2,
   .aboutUsContent > h3,
-  .aboutUsContent > p { margin-bottom: 4vw; }
+  .aboutUsContent > p { margin-top: 5vw; }
 }
 
 /* Tablet and Desktop */
