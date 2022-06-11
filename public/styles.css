@@ -554,104 +554,90 @@ footer { background-color: #000000; }
 }
 
 /* ### Our Cars ### */
+.ourCarsContent { padding: 25px; }
 
-/* Mobile */
 .ourCarsContent > h2 {
   color: #ffd900;
-  padding: 25px;
+  margin-bottom: 25px;
 }
 
 .car { margin-bottom: 50px; }
 
-.carImage > img {
+.car > img {
   width: 100%;
   height: 380px;
   object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 20px;
 }
 
-.carDescription {
-  padding: 25px;
-  display: flex;
-  flex-direction: column;
+.car h3,
+.car a { color: #ffd900; }
+
+.car li {
+  color: #b19600;
+  margin-bottom: 5px;
 }
 
-.carDescription h2,
-.carDescription h3 { color: #ffd900; }
+.car ul { margin: 30px 0px; }
 
-.carDescription li { color: #b19600; }
-
-.carDescription a {
+.car a {
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #ffd900;
-  color: #ffd900;
   font-weight: bold;
   transition: all 0.5s ease-in-out;
 }
 
-.carDescription ul { margin: 20px 0px }
-
-.carDescription a:hover {
+.car a:hover {
   background-color: #ffd900;
   color: #000000;
 }
 
 @media (max-width: 360px) {
+  .ourCarsContent { padding: 5vw; }
+
   .ourCarsContent > h2 {
     font-size: 5vw;
-    padding: 10vw 5vw;
+    margin-bottom: 5vw;
   }
 
-  .car { margin-bottom: 10vw; }
-  
-  .carImage > img {
-    width: 100%;
-    height: 75vw;
-    border-radius: 0px;
+  .car { margin-bottom: 20vw; }
+
+  .car > img {
+    height: 70vw;
+    border-radius: 2vw;
+    margin-bottom: 5vw;
   }
 
-  .carDescription {
+  .car h3,
+  .car li,
+  .car a { font-size: 5vw; }
+
+  .car li { margin-bottom: 4vw; }
+
+  .car ul { margin: 5vw 0px; }
+
+  .car a {
     padding: 5vw;
-  }
-  
-  .carDescription ul {
-    margin: 5vw 0vw;
-  }
-
-  .carDescription h2,
-  .carDescription h3,
-  .carDescription li,
-  .carDescription a { font-size: 5vw; }
-  
-  .carDescription li { margin-bottom: 5vw; }
-  
-  .carDescription a {
-    padding: 5vw 10vw;
-    border-radius: 3px;
+    border-radius: 3vw;
   }
 }
 
 /* Tablet and Desktop */
 @media (min-width: 768px) {
+  .ourCarsContent > h2 { margin: 20px; }
+
   #ourCarsElements {
     display: flex;
     flex-wrap: wrap;
   }
 
-  .ourCarsContent > h2 { padding: 25px 10px; }
-
   .car {
-    flex: calc(50% - 20px);
-    margin: 10px;
+    flex: calc(50% - 40px);
+    margin: 20px;
+    flex-wrap: wrap;
   }
-
-  .carImage > img {
-    width: 100%;
-    height: 75%;
-    border-radius: 5px;
-  }
-
-  .carDescription { padding: 25px 0px; }
 }
 
 /* Desktop */
