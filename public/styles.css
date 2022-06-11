@@ -616,10 +616,10 @@ footer { background-color: #000000; }
 
   .car li { margin-bottom: 4vw; }
 
-  .car ul { margin: 5vw 0px; }
+  .car ul { margin: 8vw 0px; }
 
   .car a {
-    padding: 5vw;
+    padding: 3vw;
     border-radius: 3vw;
   }
 }
