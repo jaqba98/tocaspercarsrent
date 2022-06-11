@@ -703,7 +703,100 @@ footer { background-color: #000000; }
   .galleryContent { width: 960px; }
 }
 
+/* ### Contact ### */
+
+.contact {
+  background-image: url('assets/backgrounds/bmw.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.contactContent {
+  padding: 50px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.contactContent > h2 { color: #ffd900; }
+
+.contactElement { margin-top: 50px; }
+
+.contactElement > span {
+  color: #ffd900;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.contactElement > h3 {
+  color: #ffd900;
+  margin-bottom: 10px;
+}
+
+.contactElement > p {
+  font-weight: bold;
+  color: #ffd900;
+}
+
+@media (max-width: 360px) {
+  .contactContent { padding: 10vw; }
+  
+  .contactElement { margin-top: 10vw; }
+  
+  .contactElement > span { font-size: 10vw; }
+  
+  .contactElement > h3 { margin-bottom: 5vw; }
+  
+  .contactContent > h2,
+  .contactElement > h3,
+  .contactElement > p { font-size: 4vw; }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .contactElements {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contactElement {
+    margin: 50px;
+    flex: calc(50% - 100px);
+  }
+}
+
+/* Desktop */
+@media (min-width: 1023px) {
+  .contactElements {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contactElement {
+    margin: 50px;
+    flex: calc(25% - 100px);
+  }
+}
+
 /* ### Car ### */
+.contactContent { padding: 20px; }
+
+.contactContent h2 {
+  color: #ffd900;
+  margin-bottom: 10px;
+}
+
+.contactContent li {
+  color: #b19600;
+  margin-bottom: 5px;
+}
+
+.contactContent li > span {
+  display: block;
+  color: #ffd900;
+  font-weight: bold;
+}
 
 /* Mobile */
 .selectCarImage > img {
