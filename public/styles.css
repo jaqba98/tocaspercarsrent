@@ -554,104 +554,90 @@ footer { background-color: #000000; }
 }
 
 /* ### Our Cars ### */
+.ourCarsContent { padding: 25px; }
 
-/* Mobile */
 .ourCarsContent > h2 {
   color: #ffd900;
-  padding: 25px;
+  margin-bottom: 25px;
 }
 
 .car { margin-bottom: 50px; }
 
-.carImage > img {
+.car > img {
   width: 100%;
   height: 380px;
   object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 20px;
 }
 
-.carDescription {
-  padding: 25px;
-  display: flex;
-  flex-direction: column;
+.car h3,
+.car a { color: #ffd900; }
+
+.car li {
+  color: #b19600;
+  margin-bottom: 5px;
 }
 
-.carDescription h2,
-.carDescription h3 { color: #ffd900; }
+.car ul { margin: 30px 0px; }
 
-.carDescription li { color: #b19600; }
-
-.carDescription a {
+.car a {
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #ffd900;
-  color: #ffd900;
   font-weight: bold;
   transition: all 0.5s ease-in-out;
 }
 
-.carDescription ul { margin: 20px 0px }
-
-.carDescription a:hover {
+.car a:hover {
   background-color: #ffd900;
   color: #000000;
 }
 
 @media (max-width: 360px) {
+  .ourCarsContent { padding: 5vw; }
+
   .ourCarsContent > h2 {
     font-size: 5vw;
-    padding: 10vw 5vw;
+    margin-bottom: 5vw;
   }
 
-  .car { margin-bottom: 10vw; }
-  
-  .carImage > img {
-    width: 100%;
-    height: 75vw;
-    border-radius: 0px;
+  .car { margin-bottom: 20vw; }
+
+  .car > img {
+    height: 70vw;
+    border-radius: 2vw;
+    margin-bottom: 5vw;
   }
 
-  .carDescription {
-    padding: 5vw;
-  }
-  
-  .carDescription ul {
-    margin: 5vw 0vw;
-  }
+  .car h3,
+  .car li,
+  .car a { font-size: 5vw; }
 
-  .carDescription h2,
-  .carDescription h3,
-  .carDescription li,
-  .carDescription a { font-size: 5vw; }
-  
-  .carDescription li { margin-bottom: 5vw; }
-  
-  .carDescription a {
-    padding: 5vw 10vw;
-    border-radius: 3px;
+  .car li { margin-bottom: 4vw; }
+
+  .car ul { margin: 8vw 0px; }
+
+  .car a {
+    padding: 3vw;
+    border-radius: 3vw;
   }
 }
 
 /* Tablet and Desktop */
 @media (min-width: 768px) {
+  .ourCarsContent > h2 { margin: 20px; }
+
   #ourCarsElements {
     display: flex;
     flex-wrap: wrap;
   }
 
-  .ourCarsContent > h2 { padding: 25px 10px; }
-
   .car {
-    flex: calc(50% - 20px);
-    margin: 10px;
+    flex: calc(50% - 40px);
+    margin: 20px;
+    flex-wrap: wrap;
   }
-
-  .carImage > img {
-    width: 100%;
-    height: 75%;
-    border-radius: 5px;
-  }
-
-  .carDescription { padding: 25px 0px; }
 }
 
 /* Desktop */
@@ -665,94 +651,161 @@ footer { background-color: #000000; }
 }
 
 /* ### Gallery ### */
+.galleryContent { padding: 25px; }
 
-/* Mobile */
 .galleryContent > h2 {
   color: #ffd900;
-  padding: 25px;
+  margin-bottom: 25px;
 }
 
 #galleryElements > img {
-  width: calc(100% - 20px);
+  width: 100%;
   height: 380px;
-  margin: 10px;
   object-fit: cover;
   border-radius: 5px;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 360px) {
+  .galleryContent { padding: 5vw; }
+
   .galleryContent > h2 {
     font-size: 5vw;
-    padding: 10vw 5vw;
+    margin-bottom: 10vw;
   }
 
   #galleryElements > img {
-    width: calc(100% - 10vw);
+    width: 100%;
     height: 70vw;
-    margin: 5vw;
+    object-fit: cover;
     border-radius: 2vw;
+    margin-bottom: 4vw;
   }
 }
 
 /* Tablet and Desktop */
 @media (min-width: 768px) {
+  .galleryContent > h2 { margin: 20px; }
+
   .gallery {
     display: flex;
     justify-content: center;
   }
 
+  #galleryElements > img {
+    width: calc(50% - 42px);
+    margin: 20px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
   .galleryContent { width: 960px; }
+}
 
-  .galleryContent > h2 { padding: 25px 10px; }
+/* ### Contact ### */
 
-  #galleryElements {
+.contact {
+  background-image: url('assets/backgrounds/bmw.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.contactContent {
+  padding: 50px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.contactContent > h2 { color: #ffd900; }
+
+.contactElement { margin-top: 50px; }
+
+.contactElement > span {
+  color: #ffd900;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.contactElement > h3 {
+  color: #ffd900;
+  margin-bottom: 10px;
+}
+
+.contactElement > p {
+  font-weight: bold;
+  color: #ffd900;
+}
+
+@media (max-width: 360px) {
+  .contactContent { padding: 10vw; }
+  
+  .contactElement { margin-top: 10vw; }
+  
+  .contactElement > span { font-size: 10vw; }
+  
+  .contactElement > h3 { margin-bottom: 5vw; }
+  
+  .contactContent > h2,
+  .contactElement > h3,
+  .contactElement > p { font-size: 4vw; }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .contactElements {
     display: flex;
     flex-wrap: wrap;
   }
 
-  #galleryElements > img {
-    width: calc(50% - 20px);
-    height: 365px;
-    border-radius: 5px;
+  .contactElement {
+    margin: 50px;
+    flex: calc(50% - 100px);
   }
 }
 
-/* ### Car ### */
+/* Desktop */
+@media (min-width: 1023px) {
+  .contactElements {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-/* Mobile */
-.selectCarImage > img {
+  .contactElement {
+    margin: 50px;
+    flex: calc(25% - 100px);
+  }
+}
+
+/* ### Selected Car ### */
+.selectedCarContent { margin: 20px; }
+
+.selectedCarContent > img {
   width: 100%;
-  height: 380px;
+  height: 360px;
   object-fit: cover;
+  margin-bottom: 20px;
 }
 
-.selectCarDescription {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-}
-
-#selectedCarContent h2,
-#selectedCarContent h3 {
+.selectedCarContent h3 {
   color: #ffd900;
   margin-bottom: 20px;
 }
 
-#selectedCarContent h2 {
-  color: #ffd900;
-  padding: 20px;
-}
-
-.selectCarDescription li {
+.selectedCarContent li {
   color: #b19600;
   margin-bottom: 5px;
 }
 
+.selectedCarContent ul { margin: 20px 0px; }
+
 table {
-  width: calc(100% - 40px);
+  width: 100%;
   border-collapse: collapse;
   border: 1px solid #b19600;
-  margin: 20px;
+  margin: 20px 0px;
 }
 
 tr { color: #b19600; }
@@ -762,58 +815,71 @@ td {
   border: 1px solid #b19600;
 }
 
-#selectedCarContent > img {
-  width: calc(100% - 40px);
-  margin: 20px;
-  border-radius: 5px;
+.selectedCarGallery > img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 360px) {
-  .selectCarImage > img { height: 60vw; }
-  
-  .selectCarDescription { padding: 5vw; }
-  
-  #selectedCarContent h2,
-  #selectedCarContent h3 {
+  .selectedCarContent { margin: 5vw; }
+
+  .selectedCarContent > img {
+    height: 70vw;
+    margin-bottom: 5vw;
+  }
+
+  .selectedCarContent h3 {
     font-size: 5vw;
-    margin-bottom: 10vw;
+    margin-bottom: 5vw;
   }
-  
-  #selectedCarContent h2 { padding: 5vw; }
-  
-  .selectCarDescription li {
-    margin-bottom: 2vw;
+
+  .selectedCarContent li {
+    font-size: 5vw;
+    margin-bottom: 5vw;
+  }
+
+  .selectedCarContent ul { margin: 5vw 0px; }
+
+  table { margin: 5vw 0px; }
+
+  td {  
+    padding: 2vw;
     font-size: 5vw;
   }
-  
-  table {
-    width: 100%;
-    margin: 0vw;
-  }
-  
-  tr { font-size: 4vw; }
-  
-  td { padding: 5vw; }
-  
-  #selectedCarContent > img {
-    width: calc(100% - 10vw);
-    margin: 5vw;
+
+  .selectedCarGallery > img {
+    height: 70vw;
+    margin-bottom: 5vw;
     border-radius: 3vw;
   }
 }
 
-/* Tablet and Desktop */
-@media (min-width: 768px) {
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
   .selectedCar {
     display: flex;
     justify-content: center;
   }
 
-  #selectedCarContent { width: 960px; }
+  .selectedCarContent { width: 768px; }
 
-  #selectedCarContent > img {
-    width: calc(50% - 20px);
-    margin: 10px;
-    border-radius: 5px;
+  .selectedCarGallery { display: flex; }
+
+  .selectedCarGallery > img { width: 50%; }
+}
+
+/* Desktop */
+@media (min-width: 1023px) {
+  .selectedCar {
+    display: flex;
+    justify-content: center;
   }
+
+  .selectedCarContent { width: 960px; }
+
+  .selectedCarGallery { display: flex; }
+
+  .selectedCarGallery > img { width: 50%; }
 }
