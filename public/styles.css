@@ -883,3 +883,57 @@ td {
 
   .selectedCarGallery > img { width: 50%; }
 }
+
+/* ### Cookies ### */
+#cookies {
+  position: fixed;
+  z-index: 1;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  padding: 40px;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+#cookies > h2 { margin-bottom: 20px; }
+
+#cookies > p {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+#cookies > button {
+  padding: 10px 20px;
+  background-color: inherit;
+  border: 2px solid #000000;
+  color: #000000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+
+#cookies > button:hover {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+@media (max-width: 360px) {
+  #cookies { padding: 10vw; }
+  
+  #cookies > h2 {
+    margin-bottom: 5vw;
+    font-size: 5vw;
+  }
+
+  #cookies > p {
+    margin-bottom: 0vw;
+    font-size: 5vw;
+  }
+  
+  #cookies > button {
+    padding: 3vw 5vw;
+    font-size: 5vw;
+    border: 1vw solid #000000;
+  }
+}
