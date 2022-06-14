@@ -618,27 +618,27 @@ footer { background-color: var(--black1); }
   left: 0px;
   bottom: 0px;
   right: 0px;
-  padding: 40px;
+  padding: 20px;
   background-color: var(--black1);
 }
 
 #cookies > h2 {
-  margin-bottom: 20px;
+  font-size: 16px;
+  margin-bottom: 10px;
   color: var(--gold1);
 }
 
 #cookies > p {
-  margin-bottom: 20px;
+  font-size: 14px;
+  margin-bottom: 10px;
   color: var(--gold2);
 }
 
 #cookies > button {
-  margin-top: 20px;
-  padding: 10px 20px;
+  padding: 5px 10px;
   background-color: inherit;
-  border: 2px solid var(--gold1);
+  border: 1px solid var(--gold1);
   color: var(--gold1);
-  font-weight: bold;
   cursor: pointer;
   transition: all 0.25s ease-in-out;
 }
@@ -652,20 +652,18 @@ footer { background-color: var(--black1); }
   #cookies { padding: 10vw; }
   
   #cookies > h2 {
+    font-size: 4vw;
     margin-bottom: 5vw;
-    font-size: 5vw;
   }
-
+  
   #cookies > p {
-    margin-bottom: 0vw;
-    font-size: 5vw;
+    font-size: 4vw;
+    margin-bottom: 2vw;
   }
   
   #cookies > button {
-    margin-top: 5vw;
-    padding: 3vw 5vw;
-    font-size: 5vw;
-    border: 1vw solid var(--gold1);
+    font-size: 4vw;
+    padding: 2vw;
   }
 }
 
@@ -673,10 +671,11 @@ footer { background-color: var(--black1); }
 @media (min-width: 768px) {
   #cookies {
     left: auto;
-    width: 600px;
     bottom: 10px;
     right: 10px;
-    border: 2px solid var(--gold3)
+    padding: 20px;
+    width: 500px;
+    border: 1px solid var(--gold3);
   }
 }
 
