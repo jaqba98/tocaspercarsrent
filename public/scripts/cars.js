@@ -1,7 +1,7 @@
 const cars = [
     {
         id: "cupra-ateca",
-        url: "wynajem-cupra-ateca-kielce",
+        url: "cupra-ateca",
         name: "Cupra Ateca",
         power: { km: 300, nm: 400 },
         engine: "2.0 TSI 4Drive",
@@ -22,7 +22,7 @@ const cars = [
     },
     {
         id: "cupra-formentor-vz5",
-        url: "wynajem-cupra-formentor-vz5-kielce",
+        url: "cupra-formentor-vz5",
         name: "Cupra Formentor VZ5",
         power: { km: 310, nm: 400 },
         engine: "2.0 TSI 4Drive",
@@ -43,7 +43,7 @@ const cars = [
     },
     {
         id: "honda-civic-type-r",
-        url: "wynajem-honda-civic-type-r-kielce",
+        url: "honda-civic-type-r",
         name: "Honda Civic Type R",
         power: { km: 320, nm: 400 },
         engine: "2.0 VTEC Turbo",
@@ -64,7 +64,7 @@ const cars = [
     },
     {
         id: "hyundai-i30n",
-        url: "wynajem-hyundai-i30n-kielce",
+        url: "hyundai-i30n",
         name: "Hyundai I30n",
         power: { km: 280, nm: 392 },
         engine: "2.0 T-GDI",
@@ -85,7 +85,7 @@ const cars = [
         },
         {
         id: "seat-leon-cupra-r",
-        url: "wynajem-seat-leon-cupra-r-kielce",
+        url: "seat-leon-cupra-r",
         name: "Seat Leon Cupra R",
         power: { km: 300, nm: 380 },
         engine: "1984 cm3, R4 turbobenzyna",
@@ -106,7 +106,7 @@ const cars = [
     },
     {
         id: "subaru",
-        url: "wynajem-subaru-kielce",
+        url: "subaru",
         name: "Subaru",
         power: { km: 300, nm: 407 },
         engine: "2.5 benzyna",

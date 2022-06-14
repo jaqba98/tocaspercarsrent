@@ -17,6 +17,7 @@ window.onload = () => {
   onLoad();
   onResize();
 };
+
 window.onresize = () => onResize();
 
 const onLoad = () => {
