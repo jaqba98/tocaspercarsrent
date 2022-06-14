@@ -9,7 +9,7 @@ const cars = [
         maximumSpeed: 247,
         mainPhoto: "cupra-ateca-1.jpg",
         photos: ["cupra-ateca-1.jpg", "cupra-ateca-2.jpg"],
-        priceLis: [
+        priceList: [
             { numberOfDays: "1-2", price: 450, kilometerLimit: 250, toBeAgreed: false },
             { numberOfDays: "3-6", price: 400, kilometerLimit: 250, toBeAgreed: false },
             { numberOfDays: "7-13", price: 350, kilometerLimit: 250, toBeAgreed: false },
@@ -30,7 +30,7 @@ const cars = [
         maximumSpeed: 250,
         mainPhoto: "cupra-formentor-vz5-1.jpg",
         photos: ["cupra-formentor-vz5-1.jpg", "cupra-formentor-vz5-2.jpg"],
-        priceLis: [
+        priceList: [
             { numberOfDays: "1-2", price: 500, kilometerLimit: 250, toBeAgreed: false },
             { numberOfDays: "3-6", price: 450, kilometerLimit: 250, toBeAgreed: false },
             { numberOfDays: "7-13", price: 400, kilometerLimit: 250, toBeAgreed: false },
@@ -51,7 +51,7 @@ const cars = [
         maximumSpeed: 270,
         mainPhoto: "honda-civic-type-r-1.jpg",
         photos: ["honda-civic-type-r-1.jpg", "honda-civic-type-r-2.jpg"],
-        priceLis: [
+        priceList: [
             { numberOfDays: "1-2", price: 550, kilometerLimit: 250, toBeAgreed: false },
             { numberOfDays: "3-6", price: 500, kilometerLimit: 250, toBeAgreed: false },
             { numberOfDays: "7-13", price: 450, kilometerLimit: 250, toBeAgreed: false },
@@ -72,7 +72,7 @@ const cars = [
         maximumSpeed: 250,
         mainPhoto: "hyundai-i30n-1.jpg",
         photos: ["hyundai-i30n-1.jpg", "hyundai-i30n-2.jpg"],
-        priceLis: [
+        priceList: [
             { numberOfDays: "1-2", price: 450, kilometerLimit: 250, toBeAgreed: false },
             { numberOfDays: "3-6", price: 400, kilometerLimit: 250, toBeAgreed: false },
             { numberOfDays: "7-13", price: 350, kilometerLimit: 250, toBeAgreed: false },
@@ -93,7 +93,7 @@ const cars = [
         maximumSpeed: 250,
         mainPhoto: "seat-leon-cupra-r-1.jpg",
         photos: ["seat-leon-cupra-r-1.jpg", "seat-leon-cupra-r-2.jpg"],
-        priceLis: [
+        priceList: [
             { numberOfDays: "1-2", price: 600, kilometerLimit: 250, toBeAgreed: false },
             { numberOfDays: "3-6", price: 550, kilometerLimit: 250, toBeAgreed: false },
             { numberOfDays: "7-13", price: 500, kilometerLimit: 250, toBeAgreed: false },
@@ -114,7 +114,7 @@ const cars = [
         maximumSpeed: 255,
         mainPhoto: "subaru-1.jpg",
         photos: ["subaru-1.jpg", "subaru-2.jpg"],
-        priceLis: [
+        priceList: [
             { numberOfDays: "1-2", price: 650, kilometerLimit: 250, toBeAgreed: false },
             { numberOfDays: "3-6", price: 600, kilometerLimit: 250, toBeAgreed: false },
             { numberOfDays: "7-13", price: 550, kilometerLimit: 250, toBeAgreed: false },
