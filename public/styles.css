@@ -507,7 +507,6 @@ footer { background-color: var(--black1); }
   width: 100%;
   height: 50vh;
   filter: invert(90%);
-  margin-bottom: -5px;
 }
 
 .footerSocialMedia { display: flex; }
