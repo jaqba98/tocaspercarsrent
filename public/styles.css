@@ -250,6 +250,42 @@ header {
   .headerSection > a { font-size: 1.25rem; }
 }
 
+/* >>> About us <<< */
+.aboutUs {
+  padding: 100px 50px;
+  background-color: var(--black1);
+}
+
+.aboutUsContent > h2 { color: var(--gold1); }
+
+.aboutUsContent > h3 { color: var(--gold2); }
+
+.aboutUsContent > p { color: var(--gold3); }
+
+.aboutUsContent > h3,
+.aboutUsContent > p { margin-top: 10px; }
+
+@media (max-width: 360px) {
+  .aboutUs { padding: 10vw; }
+  
+  .aboutUsContent > h2,
+  .aboutUsContent > h3,
+  .aboutUsContent > p { font-size: 4vw; }
+
+  .aboutUsContent > h3,
+  .aboutUsContent > p { margin-top: 5vw; }
+}
+
+/* Tablet and Desktop */
+@media (min-width: 768px) {
+  .aboutUs {
+    display: flex;
+    justify-content: center;
+  }
+
+  .aboutUsContent { width: 960px; }
+}
+
 /* >>> Why Choose Us <<< */
 .whyChooseUs {
   background-image: url('assets/backgrounds/bmw.jpg');
@@ -342,42 +378,6 @@ header {
   }
 }
 
-/* >>> About us <<< */
-.aboutUs {
-  padding: 100px 50px;
-  background-color: var(--black2);
-}
-
-.aboutUsContent > h2 { color: var(--gold1); }
-
-.aboutUsContent > h3 { color: var(--gold2); }
-
-.aboutUsContent > p { color: var(--gold3); }
-
-.aboutUsContent > h3,
-.aboutUsContent > p { margin-top: 10px; }
-
-@media (max-width: 360px) {
-  .aboutUs { padding: 10vw; }
-  
-  .aboutUsContent > h2,
-  .aboutUsContent > h3,
-  .aboutUsContent > p { font-size: 4vw; }
-
-  .aboutUsContent > h3,
-  .aboutUsContent > p { margin-top: 5vw; }
-}
-
-/* Tablet and Desktop */
-@media (min-width: 768px) {
-  .aboutUs {
-    display: flex;
-    justify-content: center;
-  }
-
-  .aboutUsContent { width: 960px; }
-}
-
 /* ### Video ### */
 .video {
   display: flex;
@@ -435,7 +435,7 @@ header {
   width: 100%;
   height: 100%;
   padding: 50px;
-  background-color: var(--black2);
+  background-color: var(--black1);
 }
 
 .cooperationContent > h2 {
@@ -472,7 +472,7 @@ header {
   width: 100%;
   height: 100%;
   padding: 50px 0px;
-  background-color: var(--gold3);
+  background-color: var(--gold2);
 }
 
 .sponsors h2 {
