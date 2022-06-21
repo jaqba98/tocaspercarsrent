@@ -413,56 +413,6 @@ header {
   }
 }
 
-/* >>> Cooperation And Sponsors <<< */
-
-/* Tablet and Desktop */
-@media (min-width: 768px) {
-  .cooperationAndSponsors {
-    display: flex;
-    height: 300px;
-  }
-
-  .cooperationAndSponsors > .cooperation,
-  .cooperationAndSponsors > .sponsors { flex: 1; }
-}
-
-/* >>> Cooperation <<< */
-.cooperationContent {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  padding: 50px;
-  background-color: var(--black1);
-}
-
-.cooperationContent > h2 {
-  color: var(--gold2);
-  margin-bottom: 10px;
-}
-
-.cooperationContent > ul > li {
-  color: var(--gold2);
-  text-align: center;
-  margin-top: 5px;
-}
-
-@media (max-width: 360px) {
-  .cooperationContent { padding: 10vw; }
-  
-  .cooperationContent > h2 {
-    font-size: 5vw;
-    margin-bottom: 2vw;
-  }
-  
-  .cooperationContent > ul > li {
-    margin-top: 2vw;
-    font-size: 3vw;
-  }
-}
-
 /* >>> Sponsors <<< */
 .sponsors {
   display: flex;
@@ -472,31 +422,46 @@ header {
   width: 100%;
   height: 100%;
   padding: 50px 0px;
-  background-color: var(--gold2);
+  background-color: var(--black2);
 }
 
-.sponsors h2 {
-  color: var(--white1);
-  margin-bottom: 10px;
+.sponsorsContent > h2 {
+  color: var(--white2);
+  margin-bottom: 20px;
+  margin: 20px 10px;
 }
 
-.sponsors > ul > li {
-  color: var(--white1);
+.sponsorsElement {
+  background-color: var(--white2);
+  padding: 25px;
+  border-radius: 5px;
+  color: var(--black2);
   text-align: center;
-  margin-top: 5px;
+  font-weight: bold;
+  margin: 10px;
+  text-align: center;
 }
+
+.sponsorsElement > h3 { margin-bottom: 10px; }
 
 @media (max-width: 360px) {
-  .sponsors { padding: 10vw; }
+  .sponsors { padding: 10vw 0px; }
   
-  .sponsors h2 {
+  .sponsorsContent > h2 {
+    margin-bottom: 5vw;
     font-size: 5vw;
-    margin-bottom: 2vw;
+    margin: 10vw 5vw;
   }
   
-  .sponsors > ul > li {
-    margin-top: 2vw;
-    font-size: 3vw;
+  .sponsorsElement {
+    padding: 10vw;
+    border-radius: 2vw;
+    margin: 5vw;
+  }
+  
+  .sponsorsElement > h3 {
+    margin-bottom: 5vw;
+    font-size: 5vw;
   }
 }
 
