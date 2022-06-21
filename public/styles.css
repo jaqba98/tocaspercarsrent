@@ -1,7 +1,7 @@
 /* Variables */
 :root {
   /* Sizes */
-  --navHeight: 60px;
+  --navHeight: 80px;
   /* Gold colors */
   --gold1: #ffd900;
   --gold2: #b19600;
@@ -52,15 +52,7 @@ nav {
   background-color: var(--black1);
 }
 
-#navLogo {
-  text-transform: uppercase;
-  color: var(--gold1);
-}
-
-#navLogo > span {
-  color: var(--gold2);
-  margin-left: 5px;
-}
+#navLogo > img { width: 200px; }
 
 #navLinks {
   transform: translateX(-100vw);
@@ -110,10 +102,7 @@ nav {
 @media (min-width: 161px) and (max-width: 300px) {
   nav { padding: 10px; }
 
-  #navLogo > span {
-    margin-left: 0px;
-    display: block;
-  }
+  #navLogo > img { width: 50vw; }
 }
 
 @media (max-width: 160px) {
@@ -129,6 +118,8 @@ nav {
 
 /* Tablet and Desktop */
 @media (min-width: 768px) {
+  #navLogo > img { width: 250px; }
+
   #navLinks {
     display: flex;
     position: relative;
