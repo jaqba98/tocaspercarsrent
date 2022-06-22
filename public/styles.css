@@ -52,7 +52,15 @@ nav {
   background-color: var(--black1);
 }
 
-#navLogo > img { width: 200px; }
+#navLogo {
+  text-transform: uppercase;
+  color: var(--gold1);
+}
+
+#navLogo > span {
+  color: var(--gold2);
+  margin-left: 5px;
+}
 
 #navLinks {
   transform: translateX(-100vw);
@@ -179,6 +187,11 @@ header {
   align-items: center;
 }
 
+.headerSection > img {
+  width: 75%;
+  margin-bottom: 50px;
+}
+
 .headerSection > h2,
 .headerSection > h3,
 .headerSection > a {
@@ -209,9 +222,9 @@ header {
 }
 
 @media (max-width: 320px) {
-  .headerSection {
-    bottom: 10vw;
-  }
+  .headerSection > img { margin-bottom: 20vw; }
+
+  .headerSection { bottom: 10vw; }
   
   .headerSection > h2,
   .headerSection > h3,
@@ -233,6 +246,8 @@ header {
 /* Tablet and Desktop */
 @media (min-width: 768px) {
   header { height: calc(800px - var(--navHeight)); }
+
+  .headerSection > img { width: 600px; }
 
   .headerSection > h2 { font-size: 2rem; }
 
